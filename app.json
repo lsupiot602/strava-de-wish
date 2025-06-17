@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "strava-clone",
+    "slug": "strava-clone",
+    "version": "1.0.0",
+    "platforms": [
+      "android",
+      "ios",
+      "web"
+    ],
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "android": {
+      "config": {
+        "googleMaps": {
+          "apiKey": "TA_CLE_GOOGLE_MAPS_ANDROID"
+        }
+      },
+      "package": "com.tonapp.stravaclone"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "93b4bca7-d35f-4b48-b615-f2f56cf7046d"
+      }
+    }
+  }
+}
