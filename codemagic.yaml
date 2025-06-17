@@ -5,17 +5,14 @@ workflows:
     environment:
       vars:
         NODE_ENV: production
-      flutter: none
-      xcode: latest
-      cocoapods: default
       node: stable
+      # Pas besoin de flutter ni xcode pour Android React Native
     scripts:
       - npm install
-      - npm run android --if-present
+      - npx react-native run-android --variant=release
     artifacts:
-      - app/build/outputs/apk/release/app-release.apk
+      - android/app/build/outputs/apk/release/app-release.apk
     publishing:
       email:
         recipients:
           - louis.supiot111@gmail.com
-          
